@@ -1,0 +1,43 @@
+<!--pages/my/my.wxml-->
+<!--pages/my/my.wxml-->
+<view class="login">
+  <!-- <image mode="top" src="/images/test.jpg" ></image>
+  <text>大雪纷飞</text> -->
+
+  <block wx:if="{{avatar}}">
+    <image mode="top" src="{{avatar}}" ></image>
+    <text>{{nickname}}</text>
+  </block>
+  <block wx:else>
+      <button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserinfoFn">授权登录</button>
+  </block>
+</view>
+
+<view class="navs">
+  <view class="nav">
+    <text>群聊</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text>分享</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text bindtap="scan">扫一扫</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text bindtap="about">关于</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text>意见反馈</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text>联系我们</text>
+    <text>></text>
+  </view>
+</view>
+
+

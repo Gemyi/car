@@ -1,0 +1,88 @@
+/* pages/index/index.wxss */
+/* Page 相当于以前的HTML */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+/* 地图 */
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* 地图-缩放 */
+.scale-control {
+  width: 80rpx;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 30rpx;
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  overflow: hidden;
+}
+
+.scale-control .add,
+.scale-control .del {
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.scale-control button::after {
+  border: none !important;
+}
+
+/* 地图-定位 */
+.position-control {
+  width: 50rpx;
+  height: 50rpx;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+}
+
+.position-control button {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background: #fff;
+}
+
+/* 地图-导航 */
+.navs-control {
+  width: 100rpx;
+  height: 100rpx;
+  background: #4790F7;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navs-control .navs-img {
+  height: 50%;
+  width: 50%;
+}
+
+.navs-control button {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  color: #fff;
+  background: #4790F7;
+  font-size: 16px;
+}
+
+.navs-control button::after {
+  border: none;
+}

@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<view class="img">
+  <image mode="top" src="/images/about.jpg" ></image>
+</view>

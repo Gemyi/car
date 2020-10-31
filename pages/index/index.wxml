@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<!-- 地图 -->
+<map 
+  class="map" 
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="{{scale}}" 
+  show-compass="true"
+  show-scale="true"
+  show-location="true"
+  enable-overlooking="true"
+>
+  <!-- 地图-缩放 -->
+  <cover-view class="scale-control">
+    <button class="add" bindtap="setScaleFn" data-type="add">+</button>
+    <button class="del" bindtap="setScaleFn" data-type="del">-</button>
+  </cover-view>
+ <!-- 定位控件 -->
+ <view class="position-control">
+      <button bindtap="setPositionFn" >●</button>
+  </view>
+  <!-- 导航控件 -->
+  <cover-view class="navs-control">
+    <cover-view class="navs-img">
+      <cover-image src="../../images/nav.png" />
+    </cover-view>
+    <cover-view bindtap="showMapFn">
+      <button>导航</button>
+    </cover-view>
+  </cover-view>
+</map>

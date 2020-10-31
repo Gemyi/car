@@ -1,0 +1,35 @@
+<!--pages/road/road.wxml-->
+<!-- <text>pages/road/road.wxml</text> -->
+
+<view class="header">
+  <!-- 
+  需求：仿微信朋友圈图片一点放大
+  PC：用a标签  href放图片地址即可  包括下载excel
+  小程序：用API
+ -->
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <a>
+    <text>小舟舟</text>
+    <text>#管制# 南京市建邺区现在实行交通管制请绕行</text>
+  </a>
+</view>
+<view class="img">
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+  <image src="/images/kedou.png" bindtap="showPreviewImg" data-realImg=""></image>
+</view>
+<view class="footer">
+  <a>
+    <span>南京市建邺区莲花新城北苑</span>
+    <span>2020-05-04 16:52:31</span>
+  </a>
+</view>
+<view class="hr"></view>
+<navigator open-type="navigate" url="/pages/roadinfo/roadinfo">
+  <image src="/images/add.png" ></image> 
+</navigator>
+  

@@ -1,0 +1,89 @@
+.content {
+  padding-left: 10rpx;
+}
+
+.weui-cells {
+  border-bottom: solid 2rpx #ccc;
+}
+
+.weui-cell {
+  padding: 10rpx;
+}
+
+.weui-cells .weui-cell {
+  display: flex;
+}
+
+.sel {
+  padding: 25rpx 0rpx;
+  border-bottom: solid 2rpx #ccc;
+}
+
+.sel .dj {
+  color: #ccc;
+  padding-left: 70rpx;
+}
+
+textarea {
+  width: 700rpx;
+  height: 150rpx;
+  padding: 10rpx;
+  border: solid 2rpx #ccc;
+  margin-top: 10rpx;
+}
+
+.textarea-wrp {
+  padding: 10rpx 0;
+  background-color: #fff;
+}
+
+.textarea-wrp .xinxi {
+  margin-bottom: 10rpx;
+}
+
+.textarea-wrp .xz {
+  float: right;
+  padding-right: 10rpx;
+  color: #ccc;
+}
+
+.luyin {
+  position: relative;
+  right: -40%;
+  margin-top: 15rpx;
+}
+
+.luyin cover-image {
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 14rpx;
+}
+
+.luyin text {
+  color: #ccc;
+}
+
+.scfj {
+  padding-right: 20rpx;
+}
+
+.scfj .kk {
+  width: 100%;
+  height: 300rpx;
+  border: solid 2rpx #ccc;
+  margin: 20rpx 0;
+}
+
+.scfj .photo {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 40rpx;
+  border: dashed 2rpx #ccc;
+  margin: 25rpx;
+}
+
+.btn{
+  width: 40%;
+  height:40%;
+  margin-top: 20rpx;
+}

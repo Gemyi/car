@@ -1,0 +1,45 @@
+<!--pages/road_condition/road_condition.wxml-->
+<view class="content">
+  <text>选择路况类型、地址、填写路况信息即可发布 </text>
+  <view class="weui-cells weui-cells_after-title">
+    <radio-group bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+        <view class="weui-cell__hd">
+          <radio value="{{item.value}}" checked="true"/>
+        </view>
+        <view class="weui-cell__bd">{{item.name}}</view>
+      </label>
+    </radio-group>
+  </view>
+  <view class="sel">
+    <text bindtap="chooseAddress">选择地址</text>
+    <text class="dj">点击选择:</text>
+  </view>
+  <!-- 输入区 -->
+  <view class="textarea-ad">
+    <textarea placeholder="选择或输入地址" bindblur="bindTextAreaBlur" value="{{address}}"></textarea>
+  </view>
+  <view class="textarea-wrp">
+    <view class="xinxi">填写路况信息</view>
+    <textarea placeholder="请输入或语音识别哪个路段、收费站。服务区发生了什么，最新情况" maxlength="500" value="{{yuyindata}}"></textarea>
+    <text class="xz">0-500</text>
+    <view class="luyin" bindtouchstart="touchStart" bindtouchend="touchEnd">
+      <cover-image src="/images/voice.png"></cover-image>
+      <text wx:if="{{recordState == false}}">长按识别</text>
+      <text wx:else>识别中...</text>
+    </view>
+  </view>
+
+  <view class="scfj">
+    <view>上传附件</view>
+    <block wx:for="{{imgs}}" wx:key="index">
+    <image src="{{item}}" style="width:180rpx;height:180rpx;"></image>
+    </block>
+    <view class="kk"><image bindtap="setImgsFn" class="photo" src="/images/weibiaoti1.png"></image></view>
+    <radio value="订阅消息通知"/>订阅消息通知
+  </view>
+  <view>
+    <button class="btn" type="primary" size="default" >提交</button>
+  </view>
+</view>
+

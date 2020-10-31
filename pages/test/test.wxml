@@ -1,0 +1,18 @@
+<!--pages/test/test.wxml-->
+<!-- 
+  明确：咱们获取到用户的昵称、头像一定要请求接口让后端保存
+  原因：后期评论、历史订单等地方需要显示用户头像 你的还有别人的
+  所以：open-data语法直接显示  98%不用
+  但是：咱们也看看
+ -->
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- 
+  明确：微信开发组件都是被微信改过了 不是传统的HTML
+  举例：button增加open-type就变强了 不仅仅是一个普通的按钮
+  还可以：获取用户信息
+  思考：和上面的区别？
+  回答：下面这个可以交给js处理 ，上面直接显示
+  因为：交给了js处理 咱们后期就可以请求接口交给后端
+ -->
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserinfoFn">授权登录</button>
